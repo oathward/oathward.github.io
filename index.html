@@ -4,11 +4,70 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Oathward</title>
-  <meta name="description" content="Oathward — Individual IT / AI Consulting">
+  <meta name="description" content="Oathward — Individual IT / AI Consulting" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <h1>Oathward</h1>
-  <p>Individual IT / AI Consulting</p>
-  <p>Coming soon.</p>
+  <main class="wrap">
+    <header class="header">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div>
+          <h1>Oathward</h1>
+          <div class="tag">Individual IT / AI Consulting</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Overview</h2>
+        <p class="kv">
+          ITとAIを「道具」として、現場の業務と意思決定を前に進めます。<br />
+          小さく始めて、確実に積み上げる。守りながら進める。
+        </p>
+        <p class="small">
+          相談・壁打ち・設計支援・改善提案・ドキュメント整備・プロジェクト推進（PM/PMO）など。
+        </p>
+
+        <div class="list" aria-label="Links">
+          <a class="pill" href="https://x.com/USERNAME" target="_blank" rel="noopener noreferrer">X</a>
+          <a class="pill" href="https://github.com/oathward" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="pill" href="https://www.linkedin.com/in/USERNAME" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="pill" href="https://forms.gle/FORM_ID" target="_blank" rel="noopener noreferrer">Contact</a>
+        </div>
+
+        <div class="footer">
+          <span>© <span id="y"></span> Oathward</span>
+          <span>Based in Japan</span>
+        </div>
+      </article>
+
+      <aside class="card">
+        <h2>Services</h2>
+        <p class="small">
+          - AI活用（業務設計 / 運用導入 / ガードレール）<br/>
+          - Web / API 設計・レビュー<br/>
+          - ドキュメント整備（仕様・手順・運用）<br/>
+          - PM/PMO（進行・調整・可視化）
+        </p>
+
+        <h2 style="margin-top:18px;">Contact</h2>
+        <p class="small">
+          まずはお気軽にご連絡ください。<br/>
+          フォーム（Google Forms 推奨）を用意すると、サーバ無しで運用できます。
+        </p>
+        <p class="small">
+          <a class="pill" href="https://forms.gle/FORM_ID" target="_blank" rel="noopener noreferrer">
+            Open Contact Form
+          </a>
+        </p>
+      </aside>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

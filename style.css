@@ -1,0 +1,111 @@
+:root{
+  --bg:#0b1220;
+  --fg:#e8eefc;
+  --muted:#a9b4d0;
+  --card:#111a2f;
+  --line:rgba(255,255,255,.12);
+  --accent:#c0cadb; /* steel-ish */
+  --max:980px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+  background: radial-gradient(1200px 600px at 20% 0%, rgba(192,202,219,.10), transparent 50%),
+              radial-gradient(1000px 500px at 90% 10%, rgba(232,238,252,.08), transparent 55%),
+              var(--bg);
+  color:var(--fg);
+}
+a{color:inherit}
+.wrap{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:56px 20px 72px;
+}
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:28px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.mark{
+  width:44px;height:44px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background: linear-gradient(135deg, rgba(192,202,219,.18), rgba(255,255,255,.02));
+}
+h1{
+  font-size:32px;
+  line-height:1.1;
+  letter-spacing:.2px;
+  margin:0;
+}
+.tag{
+  margin:8px 0 0;
+  color:var(--muted);
+  font-size:14px;
+}
+.grid{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap:18px;
+}
+@media (max-width: 860px){
+  .grid{grid-template-columns:1fr}
+}
+.card{
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:22px;
+  background: rgba(17,26,47,.72);
+  backdrop-filter: blur(8px);
+}
+h2{
+  margin:0 0 10px;
+  font-size:16px;
+  color:var(--accent);
+  letter-spacing:.5px;
+  text-transform:uppercase;
+}
+p{margin:0 0 10px;color:var(--fg)}
+.small{color:var(--muted);font-size:14px;line-height:1.6}
+.kv{
+  font-size:18px;
+  line-height:1.7;
+  margin-top:6px;
+}
+.list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:14px;
+}
+.pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 12px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  text-decoration:none;
+  background: rgba(255,255,255,.03);
+}
+.pill:hover{background: rgba(255,255,255,.06)}
+.footer{
+  margin-top:22px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:13px;
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
